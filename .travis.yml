@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true bsobbe/docker-react npm run test
 
 deploy:
-  provider: s3
+  provider: elasticbeanstalk
   region: "eu-north-1"
   app: "docker-react"
   env: "Dockerreact-env"
